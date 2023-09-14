@@ -1,15 +1,13 @@
-import { Container, Message } from "./styles";
+import { Container, Message } from './styles'
 
 type Props = {
-  message: string;
+  message: string
 }
 
 export function Listempty({ message }: Props) {
   return (
     <Container>
-      <Message>
-        {message}
-      </Message>
+      <Message>{message}</Message>
     </Container>
   )
 }
