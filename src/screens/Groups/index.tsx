@@ -54,7 +54,7 @@ export default function Groups() {
       ) : (
         <FlatList
           data={groups}
-          keyExtractor={(item) => String(item)}
+          keyExtractor={(item) => item}
           renderItem={({ item }) => (
             <GroupCard title={item} onPress={() => handleOpenGroup(item)} />
           )}
